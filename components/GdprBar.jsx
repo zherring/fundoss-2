@@ -13,13 +13,13 @@ const GdprBar = () => {
         <Navbar bg="light" expand="lg" fixed="bottom" className="justify-content-end">
           <Container>
             <Navbar.Text>
-              We need to tell you that we use cookies to improve your user experience.
+              This website uses cookies to ensure you get the best experience. <a href="https://fundoss.org/page/privacy">View our Privacy Policy.</a>
             </Navbar.Text>
             <div>
               <Button
                 onClick={() => {
                   Cookies.set('gdprconsent', 1);
-                  setConsent(1); 
+                  setConsent(1);
                 }}
                 variant="outline-primary"
               >Sure I like 🍪's!
@@ -30,7 +30,7 @@ const GdprBar = () => {
         </Navbar>
       ) : null}
     </>
-  ); 
+  );
 };
 
 export default GdprBar;
